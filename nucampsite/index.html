@@ -21,24 +21,42 @@
 
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row row-content align-items-center">
+            <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
                     <a href="index.html">
                     <img src="img/logo.png" class="img-fluid" /></a>
-                 </div>
-                <div class="col">
-                    <h1>NuCamp</h1>
-                    <h2>a better way to camp</h2>
+                    </div>
+                    <div class="col">
+                        <h1>NuCamp</h1>
+                        <h2>a better way to camp</h2>
+                    </div>
+                    <!-- Reservations button task three-->
+                    <div class="col-md-4 col-xl-2 col-mt-4">
+                        <!-- test run of new button commented out
+                            <button type="reserve campsite" class="btn btn-info btn-lg text-nowrap">Reserve Campsite</button>
+                        </form>
+                        eof test run-->
+                        <!--new button 10 40 am-->
+                            <a href="#card-header">
+                            <button type="reserve campsite" class="btn btn-info btn-lg text-nowrap btn-align-right">Reserve Campsite</button>
+                        </a>
+                       
+                        
+                        </div>
+                        <!--eof new button-->
                 </div>
+                    
+                 </div>
+                
             </div>
         </div>
     </header>
 
-    
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top ">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar"> -->
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,16 +69,17 @@
                         <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                     </ul>
                 </div>
-            </div>
+            </div></div> <!-- Added missing closing div -->
     </nav>
+    <!--week 2 task 2 step 1-->
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-sm-4  <div class="col-sm-4 order-sm-last col-md-3">
+            <!--<div class="col-sm-4-->  <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Discover & Review</h2>
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
+                    <img class="d-flex ml-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
                         <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
@@ -69,13 +88,18 @@
             </div>
         </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
+        <div class="row row-content align-items-center ">
+            <div class="col-sm-4 col-md-3 ">
                 <h2>Featured Campsites</h2>
             </div>
-            <div class="col">
+            <div class="col ">
+                
+                <img src="img/react-lake-thumb.jpg" alt="Responsive Image" class="img-thumbnail float-right d-flex mr-3 " >
+                
                 <h3>React Lake Campground</h3>
-                <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                
+                
             </div>
         </div>
 
@@ -83,27 +107,90 @@
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
             </div>
-                  <div class="col">
-                    <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
-                        <div class="media-body align-self-center">
-                            <h3>Bootstrap Outfitters</h3>
-                            <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-                        </div>
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex ml-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
+                    <div class="media-body align-self-center">
+                        <h3>Bootstrap Outfitters</h3>
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
                     </div>
                 </div>
-                    <h3>Bootstrap Outfitters</h3>
-                    <p>Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
+            </div>
+                
+        </div>
+        
+            <!--week 2task 2 step 3-->
+        <div class="row row-content">
+            <!--week 2 task 2 step 4-->
+            <div class="col-sm-6 mx-auto">
+                <!--week 2 task 2 step 5-->
+                <div class="card">
+                    <h3 class="card-header text-light bg-info">
+                        Reserve a Campsite
+                    </h3>
+                    <!--week 2 task 2 step 7-->
+                    <div class="card-body">
+                        
+                        <form id="reserveForm">
+                            <div class="row form-group">
+                                
+                                    <!--week 2 task 2 step 8-->
+                               
+                                    <!--researched and added after finishing and not having it perfect-->
+                                <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                                <div class="col">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option value="Select">Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                              <!--experimental code to fix problem with date-->
+                            <div class="row form-group">
+                                
+                                    <!--week 2 task 2 step 8-->
+                                
+                                    <!--researched and added after finishing and not having it perfect-->
+                                <label for="date" class="col ">Date</label>
+                                <div class="col-sm-6">
+                                    <input type="date"  id="date" name="date" class="form-control" placeholder="Date">
+                                </div>
+                                
+                             
+                            </div>
+                            <!--eof experimental code-->
+                            
+                            
+                            <div class="row form-group">
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+                        
+                            
+                            
+                           
+                               
+                            
+                        </div>
+                    </form>
+                           
+                </div>
             </div>
         </div>
+        <!--week 2 task 2 step 2-->
     </div>
     <footer class="site-footer">
         <div class="container">
-            <div class="row">             
+            <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                    <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Sites</a></li>
@@ -120,7 +207,7 @@
                 <div class="col-sm-4 text-center">
                     <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
                     <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
-                </div>               
+                </div>
            </div>
         </div>
     </footer>

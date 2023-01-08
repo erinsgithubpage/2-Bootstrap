@@ -37,3 +37,13 @@ header h2 {
 .navbar {
     background-color: #901CAD;
 }
+
+.mr {
+    margin-right: 1em;
+}
+
+.tab-content {
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 10px;
+}
