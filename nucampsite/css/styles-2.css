@@ -49,9 +49,9 @@ header h2 {
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(99, 45, 45, 0.5);
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid lightcoral;
 }
